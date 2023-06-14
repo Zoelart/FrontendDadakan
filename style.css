@@ -7,7 +7,7 @@
   font-family: 'Poppins', sans-serif;
 }
 body{
-  overflow: hidden;
+/*   overflow: hidden; */
   background: #E4E9F7;
 }
 .sidebar{
@@ -329,4 +329,18 @@ body{
   color: black;
   background-color: white;
   border: 1px solid black;
+}
+
+.map {
+  position: relative;
+  text-align: right;
+  height: 643px;
+  width: 1380px;
+}
+
+.gmap {
+  overflow: hidden;
+  background: none!important;
+  height: 643px;
+  width: 1380px;
 }
