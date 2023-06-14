@@ -321,7 +321,7 @@ body{
   background-color: #fff;
 }
 
-.dropdown,.bar-content .buttons {
+.dropdown,.bar-content .buttons > button {
   margin-right: 15px;
 }
 
