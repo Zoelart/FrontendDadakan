@@ -8,6 +8,7 @@
 }
 body{
   overflow: hidden;
+  background: #E4E9F7;
 }
 .sidebar{
   position: fixed;
@@ -213,7 +214,7 @@ body{
 }
 .home-section{
   position: relative;
-  background: #E4E9F7;
+  /* background: #E4E9F7; */
   /* height: 100vh; */
   left: 260px;
   width: calc(100% - 260px);
@@ -280,24 +281,52 @@ body{
 
 .maps-section{
   position: relative;
-  background: #E4E9F7;
-  /* height: 100vh; */
+  /* background: #E4E9F7; */
   left: 260px;
   width: calc(100% - 260px);
   transition: all 0.5s ease;
-  /* padding: 12px; */
+  padding: 12px;
+  padding-bottom: 12px;
+}
+.sidebar.close ~ .maps-section{
+  left: 78px;
+  width: calc(100% - 78px);
 }
 
-.maps-section{
+.bar-section{
   position: relative;
-  background: #E4E9F7;
-  height: 100vh;
+  /* background: #E4E9F7; */
   left: 260px;
   width: calc(100% - 260px);
   transition: all 0.5s ease;
   padding: 12px;
 }
-.sidebar.close ~ .maps-section{
+.sidebar.close ~ .bar-section{
   left: 78px;
   width: calc(100% - 78px);
+}
+
+/* .bar-section {
+  display: flex;
+} */
+
+.bar-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.bar-content .gardu{
+  background-color: #fff;
+}
+
+.dropdown,.bar-content .buttons {
+  margin-right: 15px;
+}
+
+.bar-content .dropdown .btn{
+  color: black;
+  background-color: white;
+  border: 1px solid black;
 }
